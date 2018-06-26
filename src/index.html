@@ -105,11 +105,14 @@ console.log(y);
 // ReferenceError: y is not defined</code></pre>
     </section>
 
-    <section class="main-section" id="Section_Template_3">
+    <section class="main-section" id="Global_variables">
       <header class="main-section__header">
-        <h2 class="main-section__heading">Section Template 3</h2>
+        <h2 class="main-section__heading">Global variables</h2>
       </header>
+      <p class="main-section__prose">Global variables are in fact properties of the global object. In web pages the global object is <code class="inline-code">window</code>, so you can set and access global variables using the <code class="inline-code">window.variable</code> syntax.</p>
+      <p class="main-section__prose">Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called <var class="inline-code">phoneNumber</var> is declared in a document, you can refer to this variable from an iframe as <code class="inline-code">parent.phoneNumber</code>.</p>
     </section>
+
     <section class="main-section" id="Section_Template_4">
       <header class="main-section__header">
         <h2 class="main-section__heading">Section Template 4</h2>
