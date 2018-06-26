@@ -63,11 +63,30 @@ greetMe("World");</code></pre>
       <p class="main-section__prose">You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are <code class="inline-code">Number_hits</code>, <code class="inline-code">temp99</code>, and <code class="inline-code">_name</code>.</p>
     </section>
 
-    <section class="main-section" id="Section_Template_1">
+    <section class="main-section" id="Declaring_variables">
       <header class="main-section__header">
-        <h2 class="main-section__heading">Section Template 1</h2>
+        <h2 class="main-section__heading">Declaring variables</h2>
       </header>
+      <p class="main-section__prose">You can declare a variable in three ways:</p>
+      <ol class="list">
+        <li class="list__item">
+          <p class="main-section__prose">With the keyword <code class="inline-code">var</code>. For example,</code></p>
+          <pre class="code-block"><code class="code-block__code">var x = 42;</code></pre>
+          <p class="main-section__prose">This syntax can be used to declare both local and global variables.</p>
+        </li>
+        <li class="list__item">
+          <p class="main-section__prose">By simply assigning it a value. For example,</p>
+          <pre class="code-block"><code class="code-block__code">x = 42;</code></pre>
+          <p class="main-section__prose">This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
+        </li>
+        <li class="list__item">
+          <p class="main-section__prose">With the keyword <code class="inline-code">let</code>. For example,</p>
+          <pre class="code-block"><code class="code-block__code">let y = 13;</code></pre>
+          <p class="main-section__prose">This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
+        </li>
+      </ol>
     </section>
+
     <section class="main-section" id="Section_Template_2">
       <header class="main-section__header">
         <h2 class="main-section__heading">Section Template 2</h2>
