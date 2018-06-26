@@ -113,11 +113,29 @@ console.log(y);
       <p class="main-section__prose">Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called <var class="inline-code">phoneNumber</var> is declared in a document, you can refer to this variable from an iframe as <code class="inline-code">parent.phoneNumber</code>.</p>
     </section>
 
-    <section class="main-section" id="Section_Template_4">
+    <section class="main-section" id="Constants">
       <header class="main-section__header">
-        <h2 class="main-section__heading">Section Template 4</h2>
+        <h2 class="main-section__heading">Constants</h2>
       </header>
+      <p class="main-section__prose">You can create a read-only, named constant with the <code class="inline-code">const</code> keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
+      <pre class="code-block"><code class="code-block__code">const PI = 3.14;</code></pre>
+      <p class="main-section__prose">A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
+      <p class="main-section__prose">The scope rules for constants are the same as those for <code class="inline-code">let</code> block scope variables. If the <code class="inline-code">const</code> keyword is omitted, the identifier is assumed to represent a variable.</p>
+      <p class="main-section__prose">You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
+      <pre class="code-block"><code class="code-block__code">// THIS WILL CAUSE AN ERROR
+function f() {};
+const f = 5;
+// THIS WILL CAUSE AN ERROR ALSO
+function f() {
+  const g = 5;
+  var g;
+  // statements
+}</code></pre>
+      <p class="main-section__prose">However, object attributes are not protected, so the following statement is executed without problems.</p>
+      <pre class="code-block"><code class="code-block__code">const MY_OBJECT = {"key": "value"};
+MY_OBJECT.key = "otherValue";</code></pre>
     </section>
+
     <section class="main-section" id="Section_Template_5">
       <header class="main-section__header">
         <h2 class="main-section__heading">Section Template 5</h2>
