@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* 1. Better type contrast */
+
+.page {
+  background-color: #eee; /* 1 */
+  color: #444; /* 1 */
+  font: 1.6rem/1.6 sans-serif;
+}
