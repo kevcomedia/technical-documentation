@@ -87,11 +87,24 @@ greetMe("World");</code></pre>
       </ol>
     </section>
 
-    <section class="main-section" id="Section_Template_2">
+    <section class="main-section" id="Variable_scope">
       <header class="main-section__header">
-        <h2 class="main-section__heading">Section Template 2</h2>
+        <h2 class="main-section__heading">Variable scope</h2>
       </header>
+      <p class="main-section__prose">When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+      <p class="main-section__prose">JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log <samp class="inline-code">5</samp>, because the scope of <var class="inline-code">x</var> is the function (or global context) within which <var class="inline-code">x</var> is declared, not the block, which in this case is an if statement.</var></samp></p>
+      <pre class="code-block"><code class="code-block__code">if (true) {
+  var x = 5;
+}
+console.log(x); // 5</code></pre>
+      <p class="main-section__prose">This behavior changes, when using the <code class="inline-code">let</code> declaration introduced in ECMAScript 2015.</p>
+      <pre class="code-block"><code class="code-block__code">if (true) {
+  let y = 5;
+}
+console.log(y);
+// ReferenceError: y is not defined</code></pre>
     </section>
+
     <section class="main-section" id="Section_Template_3">
       <header class="main-section__header">
         <h2 class="main-section__heading">Section Template 3</h2>
