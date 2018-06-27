@@ -197,11 +197,32 @@ MY_OBJECT.key = "otherValue";</code></pre>
 }</code></pre>
     </section>
 
-    <section class="main-section" id="Section_Template_7">
+    <section class="main-section" id="while_statement">
       <header class="main-section__header">
-        <h2 class="main-section__heading">Section Template 7</h2>
+        <h2 class="main-section__heading">while statement</h2>
       </header>
+      <p class="main-section__prose">A while statement executes its statements as long as a specified condition evaluates to <code class="inline-code">true</code>. A while statement looks as follows:</p>
+      <pre class="code-block"><code class="code-block__code">while (condition)
+  statement</code></pre>
+      <p class="main-section__prose">If the condition becomes <code class="inline-code">false</code>, statement within the loop stops executing and control passes to the statement following the loop.</p>
+      <p class="main-section__prose">The condition test occurs before statement in the loop is executed. If the condition returns <code class="inline-code">true</code>, statement is executed and the condition is tested again. If the condition is <code class="inline-code">false</code>, execution stops and control is passed to the statement following <code class="inline-code">while</code>.</p>
+      <p class="main-section__prose">To execute multiple statements, use a block statement (<code class="inline-code">{...}</code>) to group those statements.</p>
+      <p class="main-section__prose">Example: The following while loop iterates as long as <var class="inline-code">n</var> is less than three:</p>
+      <pre class="code-block"><code class="code-block__code">var n = 0;
+var x = 0;
+while (n &lt; 3) {
+  n++;
+  x += n;
+}</code></pre>
+      <p class="main-section__prose">With each iteration, the loop increments <var class="inline-code">n</var> and adds that value to <var class="inline-code">x</var>. Therefore, <var class="inline-code">x</var> and <var class="inline-code">n</var> take on the following values:</p>
+      <ul class="list">
+        <li class="list__item">After the first pass: <code class="inline-code">n = 1</code> and <code class="inline-code">x = 1</code></li>
+        <li class="list__item">After the second pass: <code class="inline-code">n = 2</code> and <code class="inline-code">x = 3</code></li>
+        <li class="list__item">After the third pass: <code class="inline-code">n = 3</code> and <code class="inline-code">x = 6</code></li>
+      </ul>
+      <p class="main-section__prose">After completing the third pass, the condition <code class="inline-code">n &lt; 3</code> is no longer true, so the loop terminates.</p>
     </section>
+
     <section class="main-section" id="Section_Template_8">
       <header class="main-section__header">
         <h2 class="main-section__heading">Section Template 8</h2>
