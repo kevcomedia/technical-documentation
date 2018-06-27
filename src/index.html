@@ -223,11 +223,25 @@ while (n &lt; 3) {
       <p class="main-section__prose">After completing the third pass, the condition <code class="inline-code">n &lt; 3</code> is no longer true, so the loop terminates.</p>
     </section>
 
-    <section class="main-section" id="Section_Template_8">
+    <section class="main-section" id="Function_declarations">
       <header class="main-section__header">
-        <h2 class="main-section__heading">Section Template 8</h2>
+        <h2 class="main-section__heading">Function declarations</h2>
       </header>
+      <p class="main-section__prose">A function definition (also called a function declaration, or function statement) consists of the <code class="inline-code">function</code> keyword, followed by:</p>
+      <ul class="list">
+        <li class="list__item">The name of the function.</li>
+        <li class="list__item">A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
+        <li class="list__item">The JavaScript statements that define the function, enclosed in curly brackets, <code class="inline-code">{ }</code>.</li>
+      </ul>
+      <p class="main-section__prose">For example, the following code defines a simple function named <code class="inline-code">square</code>:</p>
+      <pre class="code-block"><code class="code-block__code">function square(number) {
+  return number * number;
+}</code></pre>
+      <p class="main-section__prose">The function <code class="inline-code">square</code> takes one argument, called <var class="inline-code">number</var>. The function consists of one statement that says to return the argument of the function (that is, <var class="inline-code">number</var>) multiplied by itself. The return statement specifies the value returned by the function.</p>
+      <pre class="code-block"><code class="code-block__code">return number * number;</code></pre>
+      <p class="main-section__prose">Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
     </section>
+
     <section class="main-section" id="Section_Template_9">
       <header class="main-section__header">
         <h2 class="main-section__heading">Section Template 9</h2>
