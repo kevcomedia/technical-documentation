@@ -158,11 +158,45 @@ MY_OBJECT.key = "otherValue";</code></pre>
       <p class="main-section__prose">Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as names containers for values, and functions as procedures that your application can perform.</p>
     </section>
 
-    <section class="main-section" id="Section_Template_6">
+    <section class="main-section" id="if...else_statement">
       <header class="main-section__header">
-        <h2 class="main-section__heading">Section Template 6</h2>
+        <h2 class="main-section__heading">if...else statement</h2>
       </header>
+      <p class="main-section__prose">Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
+      <pre class="code-block"><code class="code-block__code">if (condition) {
+  statement_1;
+} else {
+  statement_2;
+}</code></pre>
+      <p class="main-section__prose"><code class="inline-code">condition</code> can be any expression that evaluates to <code class="inline-code">true</code> or <code class="inline-code">false</code>. See Boolean for an explanation of what evaluates to <code class="inline-code">true</code> and <code class="inline-code">false</code>. If <code class="inline-code">condition</code> evaluates to <code class="inline-code">true</code>, <code class="inline-code">statement_1</code> is executed; otherwise, <code class="inline-code">statement_2</code> is executed. <code class="inline-code">statement_1</code> and <code class="inline-code">statement_2</code> can be any statement, including further nested if statements.</p>
+      <p class="main-section__prose">You may also compound the statements using <code class="inline-code">else if</code> to have multiple conditions tested in sequence, as follows:</p>
+      <pre class="code-block"><code class="code-block__code">if (condition_1) {
+  statement_1;
+} else if (condition_2) {
+  statement_2;
+} else if (condition_n) {
+  statement_n;
+} else {
+  statement_last;
+}</code></pre>
+      <p class="main-section__prose">In the case of multiple conditions only the first logical condition which evaluates to <code class="inline-code">true</code> will be executed. To execute multiple statements, group them within a block statement (<code class="inline-code">{...}</code>). In general, it's good practice to always use block statements, especially when nesting if statements:</p>
+      <pre class="code-block"><code class="code-block__code">if (condition) {
+  statement_1_runs_if_condition_is_true;
+  statement_2_runs_if_condition_is_true;
+} else {
+  statement_3_runs_if_condition_is_false;
+  statement_4_runs_if_condition_is_false;
+}</code></pre>
+      <p class="main-section__prose">It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not confuse the following code:</p>
+      <pre class="code-block"><code class="code-block__code">if (x = y) {
+  /* statements here */
+}</code></pre>
+      <p class="main-section__prose">If you need to use an assignment in a conditional expression, acommon practice is to put additional parentheses around the assignment. For example:</p>
+      <pre class="code-block"><code class="code-block__code">if ((x = y)) {
+  /* statements here */
+}</code></pre>
     </section>
+
     <section class="main-section" id="Section_Template_7">
       <header class="main-section__header">
         <h2 class="main-section__heading">Section Template 7</h2>
