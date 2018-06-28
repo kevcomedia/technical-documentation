@@ -16,6 +16,27 @@ html {
   font: 1.6rem/1.6 sans-serif;
 }
 
+.page__main,
+.page__nav {
+  max-width: 70rem;
+  margin: auto;
+}
+
+/** "Split" into two-columns at 900px
+
+    1. Provide some space for the navigation to the left.
+  */
+@media screen and (min-width: 56.25em) {
+  .page__main {
+    margin-left: 30rem; /* 1 */
+  }
+
+  .page__nav {
+    position: fixed;
+    top: 0;
+  }
+}
+
 /**
  * A block for representing blocks of code.
  *
