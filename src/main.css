@@ -21,18 +21,18 @@ html {
   margin: auto;
 }
 
-/** Split into two-column grid at 900px
+/** "Split" into two-columns at 900px
 
-    1. Flush main content to the left on larger viewports
+    1. Provide some space for the navigation to the left.
   */
 @media screen and (min-width: 56.25em) {
-  .page {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+  .page__main {
+    margin-left: 30rem; /* 1 */
   }
 
-  .page__main {
-    margin-left: 0; /* 1 */
+  .page__nav {
+    position: fixed;
+    top: 0;
   }
 }
 
