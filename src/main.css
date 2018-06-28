@@ -16,11 +16,23 @@ html {
   font: 1.6rem/1.6 sans-serif;
 }
 
-/** Split into two-column grid at 900px */
+.page__main {
+  max-width: 70rem;
+  margin: auto;
+}
+
+/** Split into two-column grid at 900px
+
+    1. Flush main content to the left on larger viewports
+  */
 @media screen and (min-width: 56.25em) {
   .page {
     display: grid;
     grid-template-columns: 1fr 3fr;
+  }
+
+  .page__main {
+    margin-left: 0; /* 1 */
   }
 }
 
