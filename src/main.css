@@ -16,7 +16,8 @@ html {
   font: 1.6rem/1.6 sans-serif;
 }
 
-.page__main {
+.page__main,
+.page__nav {
   max-width: 70rem;
   margin: auto;
 }
