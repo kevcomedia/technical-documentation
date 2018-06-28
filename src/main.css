@@ -15,3 +15,13 @@ html {
   color: #444; /* 1 */
   font: 1.6rem/1.6 sans-serif;
 }
+
+/**
+ * A block for representing blocks of code.
+ *
+ * 1. Show a horizontal scrollbar if code block is wider than viewport/container
+ */
+
+.code-block {
+  overflow-x: scroll; /* 1 */
+}
