@@ -23,5 +23,8 @@ html {
  */
 
 .code-block {
+  background-color: #ddd;
+  color: #222;
   overflow-x: scroll; /* 1 */
+  padding: 2rem 3rem;
 }
