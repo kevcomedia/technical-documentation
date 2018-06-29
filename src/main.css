@@ -43,8 +43,15 @@ html {
 
 .nav__link {
   border-bottom: var(--border);
+  color: #3f87a6;
   display: block;
   padding: 1rem 2.5rem;
+  text-decoration: none;
+}
+
+.nav__link:focus,
+.nav__link:hover {
+  text-decoration: underline;
 }
 
 /** "Split" into two-columns at 900px
