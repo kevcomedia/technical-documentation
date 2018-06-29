@@ -3,6 +3,7 @@ const browserSync = require("browser-sync");
 const cssnano = require("cssnano");
 const del = require("del");
 const gulp = require("gulp");
+const htmlmin = require('gulp-htmlmin');
 const postcss = require("gulp-postcss");
 const runSequence = require("run-sequence");
 const sourcemaps = require("gulp-sourcemaps");
