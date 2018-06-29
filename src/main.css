@@ -22,6 +22,12 @@ html {
   margin: auto;
 }
 
+/* 1. Align heading with nav links. */
+
+.nav__heading {
+  padding: 0 2.5rem; /* 1 */
+}
+
 /** Navigation links
 
     1. Remove default list styles.
