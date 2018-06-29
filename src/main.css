@@ -125,3 +125,12 @@ html {
   overflow-x: scroll; /* 1 */
   padding: 2rem 3rem;
 }
+
+/** Section headings
+
+    1. Smaller line heights look better for larger text.
+ */
+
+.main-section__heading {
+  line-height: 1.2; /* 1 */
+}
