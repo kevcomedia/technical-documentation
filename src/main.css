@@ -102,6 +102,17 @@ html {
   }
 }
 
+/** Inline code in paragraphs, etc.
+
+    1. Ensure non-italic monospace for HTML elements like `<var>`
+ */
+
+.inline-code {
+  background-color: #ddd;
+  font-family: monospace; /* 1 */
+  font-style: normal; /* 1 */
+}
+
 /**
  * A block for representing blocks of code.
  *
