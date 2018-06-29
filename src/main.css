@@ -134,3 +134,7 @@ html {
 .main-section__heading {
   line-height: 1.2; /* 1 */
 }
+
+.github {
+  text-align: center;
+}
