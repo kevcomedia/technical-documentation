@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* 1. Better type contrast */
+
+.page {
+  background-color: #eee; /* 1 */
+  color: #444; /* 1 */
+  font: 1.6rem/1.6 sans-serif;
+}
+
+.page__main,
+.page__nav {
+  max-width: 70rem;
+  margin: auto;
+}
+
+/* 1. Align heading with nav links. */
+
+.nav__heading {
+  padding: 0 2.5rem; /* 1 */
+}
+
+/** Navigation links
+
+    1. Remove default list styles.
+ */
+
+.nav__links {
+  --border: .1rem solid #bbb;
+  border-top: var(--border);
+  list-style-type: none; /* 1 */
+  margin: 0;  /* 1 */
+  padding-left: 0; /* 1 */
+}
+
+.nav__link {
+  border-bottom: var(--border);
+  color: #3f87a6;
+  display: block;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+}
+
+.nav__link:focus,
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+/** "Split" into two-columns at 900px
+
+    1. Provide some space for the navigation to the left.
+    2. Remove margin to flush navigation to the very left.
+    3. Set a fixed width for the nav (might as well use an explicit value)
+  */
+@media screen and (min-width: 56.25em) {
+  .page {
+    --nav-width: 30rem; /* 3 */
+    margin: 0; /* 2 */
+  }
+
+  .page__main {
+    margin-left: calc(var(--nav-width) + 3rem); /* 1 */
+  }
+
+  .page__nav {
+    position: fixed;
+    top: 0;
+    width: var(--nav-width); /* 3 */
+  }
+
+  /** Navigation on large viewports
+
+      1. Set to vertical flex to allow links to stretch vertically as much as
+         possible.
+   */
+
+  .nav {
+    background-color: #fff;
+    border-right: .3rem solid #bbb;
+    display: flex; /* 1 */
+    flex-direction: column; /* 1 */
+    height: 100vh; /* 1 */
+  }
+
+  /** Navigation links
+
+      1. Stretch vertically as much as possible.
+      2. Display a vertical scrollbar if there isn't enough space.
+   */
+
+  .nav__links {
+    flex-grow: 1; /* 1 */
+    overflow-y: auto; /* 2 */
+  }
+}
+
+/** Inline code in paragraphs, etc.
+
+    1. Ensure non-italic monospace for HTML elements like `<var>`
+ */
+
+.inline-code {
+  background-color: #ddd;
+  font-family: monospace; /* 1 */
+  font-style: normal; /* 1 */
+}
+
+/**
+ * A block for representing blocks of code.
+ *
+ * 1. Show a horizontal scrollbar if code block is wider than viewport/container
+ */
+
+.code-block {
+  background-color: #ddd;
+  color: #222;
+  overflow-x: scroll; /* 1 */
+  padding: 2rem 3rem;
+}
+
+/** Section headings
+
+    1. Smaller line heights look better for larger text.
+ */
+
+.main-section__heading {
+  line-height: 1.2; /* 1 */
+}
+
+.github {
+  text-align: center;
+}
